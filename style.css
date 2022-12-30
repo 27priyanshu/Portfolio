@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
     margin: 0;
@@ -6,8 +7,8 @@
 }
 
 .sidebar {
-    background-color: blue;
-    width: 15vw;
+    background-color: rgb(170, 166, 166);
+    width: 434px;
     font-family: 'Proza Libre', sans-serif;
     height: 100vh;
 }
@@ -21,11 +22,16 @@
     list-style: none;
     font-size: 18px;
     padding: 25px;
+    font-weight: bold;
+}
 
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
 }
 
 .main {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     width: 90vw;
 }
 
@@ -34,14 +40,99 @@
 }
 
 .infocontainer {
-    background-color: red;
-    height: 78vh;
+    /*background-color: red;*/
+    height: 58vh;
     width: 80vw;
     margin: 144px auto;
     display: flex;
     justify-content: space-around;
 }
 
-.devPic img{
-    width: 381px;
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 20px;
+}
+
+.Hello {
+    font-size: 65px;
+
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Proza Libre', sans-serif;
+
+}
+
+.about {
+    font-size: 30px;
+
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size-adjust: 21px;
+    margin: 0 3 px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devPic img {
+    width: 58vh;
+}
+
+.contactform{
+    padding-top: 144px;
+    padding: 0 34px;
+    font-family: 'Proza Libre', sans-serif;
+
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+        flex-direction: column;
+}
+.contactform form div input{
+    width:26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp{
+    font-size: 8px;
+        color: midnightblue;
+        margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width:24px;
+    margin: 3px 0;
+}
+
+.skill{
+    
 }
